@@ -12,7 +12,7 @@ def printBoard(board):
 def checkforerror(board):
     for row in board:
         for place in row:
-            if place == ' ':
+            if place == " ":
                 return False
         else:
             return True
@@ -28,7 +28,7 @@ def Winner(board, player):
         return True
     return False
 def turns():
-    currentplayer = 'X'
+    currentplayer = "X"
 
     while True:
         printBoard(board)
@@ -39,7 +39,7 @@ def turns():
         
 
 
-        if board[row][col] == ' ':
+        if board[row][col] == " ":
             board[row][col] = currentplayer
         else:
             print("This place is taken. Try again.")
